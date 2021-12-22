@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Affine cipher</title>
+
+</head>
+<body>
+
+   <div class="table">
+       <section>
+        <h1 class="background-title">AFFINE</h1>   
+           <h2>ALLOWED CHARACTERS</h2>
+           <p></p>
+           <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y 0 1 2 3 4 5 6 7 8 9</h3>
+           <p></p>
+           <h4>YOU CAN ALSO USE DIACRITICS CHARACTERS BUT THEY WILL BE CHANGED TO STANDARD CHARACTERS</h4>
+           <p></p>
+           <h4>IF YOU ENTER NOT ALLOWED CHARACTERS WILL BE REMOVED!</h4>
+           <p></p>
+        </section>
+        <section style="height: 150px;">
+            <textarea type="text" id="input" placeholder="Enter your text.." required></textarea>
+            <!-- <h1 class="background-input">INPUT</h1> -->
+        </section>
+
+        <section>        
+            <input type="number" id="a" placeholder="A" min="0" required><span id="validity"></span>
+            <input type="number" id="b" placeholder="B" min="0" required><span class="validity"></span>                    
+        </section>
+
+        <section>
+            <button class="btn" type="button" onclick="encrypt();">ENCRYPT</button>
+            <button class="btn" type="button" onclick="decrypt();">DECRYPT</button>
+            <button class="btn" type="button" onclick="reload();">RESET</button>
+        </section>
+
+        <section style="height: 150px; border: none;">
+            <textarea id="output" placeholder="Output.." readonly></textarea>
+            <!-- <h1 class="background-output">OUTPUT</h1> -->
+        </section>
+
+        
+    </div>
+    <div class="setColor">
+        <input id="input-color" type="color" data-color="dark" value="#212121">
+        <label class="input-color-label" for="input-color">
+          MATEJ VACULIK
+        </label>
+    </div>
+
+    
+   
+</body>
+    <script src="js.js"></script>
+    <script src="color.js"></script>
+
+</html>
